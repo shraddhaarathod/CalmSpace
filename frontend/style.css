@@ -1,0 +1,463 @@
+/* Header */
+.header {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Cards Layout */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Title */
+.card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Icon */
+.icon {
+  color: #f39c12;
+  width: 20px;
+  height: 20px;
+}
+
+/* Quote Box */
+.quote-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f7f7ff;
+  border-left: 4px solid #7b2ff7;
+  border-radius: 10px;
+  font-style: italic;
+  color: #444;
+  font-size: 0.95rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* Hidden dropdown options inside card */
+.dropdown-options {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown-options button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f7f7ff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdown-options button:hover {
+  background: #eaeaff;
+}
+/* Journal */
+.journal-box {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.journal-box textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: none;
+  font-size: 0.95rem;
+}
+
+.emoji-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.emoji-bar button {
+  font-size: 1.2rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #7b2ff7;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.save-btn:hover {
+  background: #5e22c9;
+}
+
+.entries-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.entry {
+  background: #f7f7ff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.entry small {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: #777;
+}
+/* Delete button inside journal */
+.entry {
+  background: #f7f7ff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #e63946;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+/* Breathing Card */
+.breathing-card {
+  text-align: center;
+}
+.breathing-circle {
+  margin: 1rem auto;
+  width: 100px;   /* reduced size */
+  height: 100px;
+  border-radius: 50%;
+  transition: all 4s ease-in-out;
+  background: #a29bfe;
+}
+
+/* Inhale - expand */
+.breathein {
+  transform: scale(1.5);
+  background: #74b9ff;
+}
+
+/* Hold - stay still */
+.hold {
+  transform: scale(1.5);
+  background: #55efc4;
+}
+
+/* Exhale - shrink */
+.breatheout {
+  transform: scale(1);
+  background: #fab1a0;
+}
+.breathing-circle {
+  margin: 1rem auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #a29bfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 4s ease-in-out;
+}
+
+.circle-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Expand on Breathe In */
+.breathein {
+  transform: scale(1.4);
+  background: #74b9ff;
+}
+
+/* Stay still on Hold */
+.hold {
+  transform: scale(1.4);
+  background: #ffeaa7;
+}
+
+/* Shrink back on Breathe Out */
+.breatheout {
+  transform: scale(1);
+  background: #55efc4;
+}
+.breathing-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.breathing-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.breathing-card {
+  margin-top: 1rem; /* pushes circle downward */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breathing-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #a29bfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  transition: all 4s ease-in-out;
+}
+
+.breathing-circle.inhale {
+  transform: scale(1.5);
+  background: #74b9ff;
+}
+
+.breathing-circle.hold {
+  transform: scale(1.5);
+  background: #55efc4;
+}
+
+.breathing-circle.exhale {
+  transform: scale(1);
+  background: #fab1a0;
+}
+/* 🌸 General Card Styling */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 🌸 Card Titles */
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
+  text-align: center;
+}
+
+/* 🌸 Card Descriptions */
+.card p {
+  font-size: 0.95rem;
+  color: #636e72;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 🌸 Dropdown Buttons */
+.dropdown button {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dropdown button:hover {
+  opacity: 0.9;
+}
+
+/* 🌸 Dropdown Menu */
+.dropdown-menu {
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  background: #f5f6fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  background: none;
+  color: #2d3436;
+  text-align: left;
+  padding: 0.8rem 1rem;
+}
+
+.dropdown-menu button:hover {
+  background: #dfe6e9;
+}
+
+/* 🌸 Mood Journal Styling */
+textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #dfe6e9;
+  padding: 0.8rem;
+  font-size: 0.95rem;
+  outline: none;
+  resize: none;
+  transition: border 0.2s ease;
+}
+
+textarea:focus {
+  border: 1px solid #74b9ff;
+  box-shadow: 0 0 6px rgba(116, 185, 255, 0.4);
+}
+
+/* 🌸 Save Button */
+button.save-btn {
+  margin-top: 0.8rem;
+  background: linear-gradient(135deg, #55efc4, #00cec9);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button.save-btn:hover {
+  opacity: 0.9;
+}
+
+/* 🌸 Breathing Circle */
+.breathing-circle {
+  margin: 2rem auto 1rem auto; /* pushed downward */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #a29bfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(162, 155, 254, 0.5);
+}
+
+.breathing-circle.animate {
+  animation: breathe 12s infinite;
+}
+
+@keyframes breathe {
+  0%   { transform: scale(1);   background: #a29bfe; content: "Inhale"; }
+  30%  { transform: scale(1.4); background: #74b9ff; }
+  50%  { transform: scale(1.4); background: #55efc4; }
+  80%  { transform: scale(1);   background: #ffeaa7; }
+  100% { transform: scale(1);   background: #fab1a0; }
+}
+
+/* 🌸 Start Button (Breathing) */
+.breathing-start {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.breathing-start:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+
